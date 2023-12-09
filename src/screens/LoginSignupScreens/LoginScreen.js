@@ -40,7 +40,7 @@ export const LoginScreen = ({ navigation }) => {
                 "eye"} size={24} color="black" onPress={() => 
                 setShowpassword(!showpassword)} flexDirection={'row'}/>
             </View>
-            <TouchableOpacity style={btn1}>
+            <TouchableOpacity style={btn1} onPress={()=>navigation.navigate('home')}>
             <Text style={{color: colors.col1, fontSize: titles.btntxt,
             fontWeight: "bold" }}>Sign in</Text>
             </TouchableOpacity>
